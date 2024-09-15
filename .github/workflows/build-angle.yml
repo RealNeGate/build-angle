@@ -1,12 +1,6 @@
 
 name: build-angle
-
-on:
-  schedule:
-    - cron: "0 0 * * 0"
-  push:
-    branches:
-      - main
+on: [pull_request, workflow_dispatch, push]
 
 jobs:
   info:
